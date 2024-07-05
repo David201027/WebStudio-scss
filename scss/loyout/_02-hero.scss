@@ -1,0 +1,199 @@
+.hero-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero{
+    background-color: var(--color-backgraund);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin-top: 80px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.hero-title{
+    color: var(--color-light);
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hero-button {
+    background-color: var(--color-main-brand);
+    color: var(--color-light);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    width: 216px;
+    height: 50px;
+}
+.hero-button:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 2;
+}
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 12px;
+}
+.label{
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+.div-checkbox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.check-link{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #2196f3;
+}
+.div-form > input{
+    padding-left: 42px;
+}
+input, textarea{
+    outline: none;
+}
+input:focus{
+    /* outline: 1px red dashed; */
+    border: 1px solid #2196f3;
+}
+input:focus:invalid{
+    border-color: red;
+}
+.checkbox-lb{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.sumbit{
+    width: 200px;
+    height: 50px;
+    margin-left: 124px;
+}
+.textarea{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+}
+.textarea:focus{
+    /* outline: 1px red dashed; */
+    border: 1px solid #2196f3;
+    transition: border-color 0.3s;
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.input-text{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.div-form:not(:last-child){
+    margin-bottom: 10px;
+}
+.forms{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.div-form{
+    position: relative;
+}
+.modal {
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: var(--color-light);
+    transform: translate(-50%, -50%); 
+
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.man{
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    fill: var(--color-dark);
+}
+.phone1{
+    position: absolute;
+    top: 31.30px;
+    left: 15px;
+    fill: var(--color-dark);
+}
+.mail{
+    position: absolute;
+    top: 32px;
+    left: 14px;
+    fill: var(--color-dark);
+}
+.modal .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.btn{
+    border-radius: 100%;
+    fill: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-light);
+    width: 31px;
+    height: 31px;
+}
+.btn:hover{
+    cursor: pointer;
+}
