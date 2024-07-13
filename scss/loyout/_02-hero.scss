@@ -1,19 +1,19 @@
+.hero{
+    background-color: getColor($color-backgraund);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .hero-div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.hero{
-    background-color: var(--color-backgraund);
-    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    // margin-top: 80px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
 .hero-title{
-    color: var(--color-light);
+    color: getColor($color-light);
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -24,8 +24,8 @@
     margin-bottom: 30px;
 }
 .hero-button {
-    background-color: var(--color-main-brand);
-    color: var(--color-light);
+    background-color: getColor($color-main-brand);
+    color: getColor($color-light);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -80,7 +80,7 @@
 .check-link{
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #2196f3;
+    color: getColor($color-main-brand);
 }
 .div-form > input{
     padding-left: 42px;
@@ -90,7 +90,7 @@ input, textarea{
 }
 input:focus{
     /* outline: 1px red dashed; */
-    border: 1px solid #2196f3;
+    border: getColor($color-main-brand);
 }
 input:focus:invalid{
     border-color: red;
@@ -100,7 +100,7 @@ input:focus:invalid{
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: getColor($color-text);
 }
 .sumbit{
     width: 200px;
@@ -121,7 +121,7 @@ input:focus:invalid{
 }
 .textarea:focus{
     /* outline: 1px red dashed; */
-    border: 1px solid #2196f3;
+    border: 1px solid getColor($color-main-brand);
     transition: border-color 0.3s;
 }
 .is-hidden {
@@ -156,7 +156,7 @@ input:focus:invalid{
     width: 528px;
     height: 581px;
     padding: 40px;
-    background-color: var(--color-light);
+    background-color: getColor($color-light);
     transform: translate(-50%, -50%); 
 
     transition-property: transform, opacity;
@@ -167,19 +167,19 @@ input:focus:invalid{
     position: absolute;
     top: 32px;
     left: 15px;
-    fill: var(--color-dark);
+    fill: getColor($color-dark);
 }
 .phone1{
     position: absolute;
     top: 31.30px;
     left: 15px;
-    fill: var(--color-dark);
+    fill: getColor($color-dark);
 }
 .mail{
     position: absolute;
     top: 32px;
     left: 14px;
-    fill: var(--color-dark);
+    fill: getColor($color-dark);
 }
 .modal .btn {
     position: absolute;
@@ -190,7 +190,7 @@ input:focus:invalid{
     border-radius: 100%;
     fill: #000;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--color-light);
+    background-color: getColor($color-light);
     width: 31px;
     height: 31px;
 }
