@@ -14,10 +14,6 @@
     display: flex;
     gap: 30px;
 }
-.clients-item{
-    width: 170px;
-    height: 92px;
-}
 .clients-item:hover .clients-link{
     border-color: var(--color-main-brand);
     fill: var(--color-main-brand);

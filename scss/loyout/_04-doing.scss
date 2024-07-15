@@ -19,7 +19,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: var(--color-light);
+    color: getColor($color-light);
     background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0;
