@@ -1,5 +1,5 @@
 .hero{
-    background-color: getColor($color-backgraund);
+    background-color: getColor(backgraund);
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +13,7 @@
 }
 
 .hero-title{
-    color: getColor($color-light);
+    color: getColor(light);
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -24,8 +24,8 @@
     margin-bottom: 30px;
 }
 .hero-button {
-    background-color: getColor($color-main-brand);
-    color: getColor($color-light);
+    background-color: getColor(main);
+    color: getColor(light);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -80,7 +80,7 @@
 .check-link{
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: getColor($color-main-brand);
+    color: getColor(main);
 }
 .div-form > input{
     padding-left: 42px;
@@ -90,7 +90,7 @@ input, textarea{
 }
 input:focus{
     /* outline: 1px red dashed; */
-    border: getColor($color-main-brand);
+    border: getColor(main);
 }
 input:focus:invalid{
     border-color: red;
@@ -100,7 +100,7 @@ input:focus:invalid{
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: getColor($color-text);
+    color: getColor(text);
 }
 .sumbit{
     width: 200px;
@@ -121,7 +121,7 @@ input:focus:invalid{
 }
 .textarea:focus{
     /* outline: 1px red dashed; */
-    border: 1px solid getColor($color-main-brand);
+    border: 1px solid getColor(main);
     transition: border-color 0.3s;
 }
 .is-hidden {
@@ -156,7 +156,7 @@ input:focus:invalid{
     width: 528px;
     height: 581px;
     padding: 40px;
-    background-color: getColor($color-light);
+    background-color: getColor(light);
     transform: translate(-50%, -50%); 
 
     transition-property: transform, opacity;
@@ -167,19 +167,19 @@ input:focus:invalid{
     position: absolute;
     top: 32px;
     left: 15px;
-    fill: getColor($color-dark);
+    fill: getColor(dark);
 }
 .phone1{
     position: absolute;
     top: 31.30px;
     left: 15px;
-    fill: getColor($color-dark);
+    fill: getColor(dark);
 }
 .mail{
     position: absolute;
     top: 32px;
     left: 14px;
-    fill: getColor($color-dark);
+    fill: getColor(dark);
 }
 .modal .btn {
     position: absolute;
@@ -190,7 +190,7 @@ input:focus:invalid{
     border-radius: 100%;
     fill: #000;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: getColor($color-light);
+    background-color: getColor(light);
     width: 31px;
     height: 31px;
 }

@@ -4,7 +4,7 @@
     margin-bottom: 30px;
 }
 .section-team{
-    background-color: getColor($color-gray);
+    background-color: getColor(gray);
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -28,8 +28,8 @@
 }
 .social-item:hover .social-link{
     border-radius: 50%;
-    background-color: getColor($color-main-brand);
-    fill: getColor($color-light);
+    background-color: getColor(main);
+    fill: getColor(light);
 }
 .social-link{
     width: 100%;
@@ -46,7 +46,7 @@
     transition-delay: 100ms;
 }
 .section-team-title{
-    color: getColor($color-dark);
+    color: getColor(dark);
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -56,7 +56,7 @@
 .section-team-list-item{
     padding-bottom: 30px;
     border-radius: 0 0 4px 4px;
-    background-color: getColor($color-light);
+    background-color: getColor(light);
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     /* outline: 1px red dashed; */
     display: flex;
@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 .name{
-    color: getColor($color-dark);
+    color: getColor(dark);
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -82,7 +82,7 @@
     margin-bottom: 10px;
 }
 .profession{
-    color: getColor($color-text);
+    color: getColor(text);
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;

@@ -1,5 +1,5 @@
 .footer{
-    background-color: var(--color-backgraund);
+    background-color: getColor(backgraund);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -7,7 +7,7 @@
     font-style: normal;
 }
 .footer-link{
-    color: var(--color-main-brand);
+    color: getColor(main);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -16,7 +16,7 @@
     display: block;
 }
 .footer-studio{
-    color: var(--color-light);
+    color: getColor(light);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -32,14 +32,14 @@
     margin-bottom: 9px;
 }
 .adress-list-item-link-maps{
-    color: var(--color-light);
+    color: getColor(light);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
 }
 .adress-list-item-link{
-    color: var(--color-footer-a);
+    color: getColor(footer-a);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -50,7 +50,7 @@
     transition-delay: 100ms;
 }
 .adress-list-item-link:hover{
-    color: var(--color-light);
+    color: getColor(light);
 }
 .footer-div{
     display: flex;
@@ -65,14 +65,14 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-light);
+    color: getColor(light);
     margin-bottom: 20px;
 }
 .circle{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .fill{
-    fill: var(--color-light);
+    fill: getColor(light);
 }
 .div-send{
     margin-left: 93px;
@@ -83,7 +83,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-light);
+    color: getColor(light);
     margin-bottom: 20px;
 }
 .send-input{
@@ -111,7 +111,7 @@
     align-items: center;
     justify-content: center;
     fill: white;
-    color: var(--color-light);
+    color: getColor(light);
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;

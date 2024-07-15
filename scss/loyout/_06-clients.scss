@@ -6,7 +6,7 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--color-dark);
+    color: getColor(dark);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -15,8 +15,8 @@
     gap: 30px;
 }
 .clients-item:hover .clients-link{
-    border-color: var(--color-main-brand);
-    fill: var(--color-main-brand);
+    border-color: getColor(main);
+    fill: getColor(main);
 }
 .clients-link{
     display: flex;

@@ -1,6 +1,6 @@
 .header{
-    border-bottom: getColor($color-border);
-    background-color: getColor($color-light);
+    border-bottom: getColor(border);
+    background-color: getColor(light);
     width: 1600px;
     height: 80px;
 }
@@ -32,6 +32,7 @@
     transition-duration: 500ms;
     transition-timing-function: ease;
 }
+
 .nav-list-link.active-link::after {
     transform: scaleX(1);
 }
@@ -40,7 +41,7 @@
 }
 .nav-link{
     font-family: 'Raleway';
-    color: var($color-main-brand);
+    color: getColor(main);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -49,7 +50,7 @@
 }
 .header-studio{
     font-family: 'Raleway';
-    color: var($color-black);
+    color: getColor(black);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -60,13 +61,13 @@
     align-items: center;
 }
 .nav-list-link{
-    color: getColor($color-dark);
+    color: getColor(dark);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-decoration: none;
     position: relative;
-    padding-bottom: 31px;
+    padding-bottom: 33px;
 
     transition-property: color, fill;
     transition-duration: 500ms;
@@ -74,14 +75,14 @@
     transition-delay: 100ms;
 }
 .nav-list-link:hover{
-    color: getColor($color-main-brand);
+    color: getColor(main);
 }
 .header-list{
     gap: 30px;
 }
 .list-link{
-    color: getColor($color-text);
-    fill: getColor($color-text);
+    color: getColor(text);
+    fill: getColor(text);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -96,10 +97,10 @@
     transition-delay: 100ms;
 }
 .list-item:hover .list-link{
-    color: getColor($color-main-brand);
-    fill: getColor($color-main-brand);
+    color: getColor(main);
+    fill: getColor(main);
 
 }
 .active-link{
-    color: getColor($color-main-brand);
+    color: getColor(main);
 }
