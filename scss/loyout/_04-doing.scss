@@ -2,18 +2,18 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section-doing-title{
+.title-doing{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
 }
-.section-doing-list{
+.list-doing{
     display: flex;
     justify-content: space-between;
 }
-.doing-text{
+.text-doing{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -27,7 +27,7 @@
     text-wrap: nowrap;
     padding: 24px 0;
 }
-.doing-item {
+.list-doing__item{
     position: relative;
     width: 370px;
     height: 294px;
@@ -39,5 +39,4 @@
 }
 .doing-item:hover{
     transform: scale(1.05);
-    cursor: pointer;
 }

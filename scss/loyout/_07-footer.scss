@@ -3,10 +3,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.adress{
+.footer__adress{
     font-style: normal;
 }
-.footer-link{
+.link-footer{
     color: getColor(main);
     font-family: 'Raleway';
     font-weight: 700;
@@ -15,7 +15,7 @@
     margin-bottom: 20px;
     display: block;
 }
-.footer-studio{
+.logo-footer{
     color: getColor(light);
     font-family: 'Raleway';
     font-weight: 700;
@@ -23,22 +23,22 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
 }
-.adress-list-item{
+.list-footer__item{
     /* outline: 1px red dashed; */
     display: flex;
     flex-direction: row;
 }
-.adress-list-item:not(:last-child){
+.list-footer__item:not(:last-child){
     margin-bottom: 9px;
 }
-.adress-list-item-link-maps{
+.link-address-maps{
     color: getColor(light);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
 }
-.adress-list-item-link{
+.link-address{
     color: getColor(footer-a);
     font-weight: 400;
     font-size: 14px;
@@ -49,18 +49,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 100ms;
 }
-.adress-list-item-link:hover{
+.link-address:hover{
     color: getColor(light);
 }
 .footer-div{
     display: flex;
     flex-direction: row;
 }
-.social-footer{
+.footer-social{
     padding-top: 12px;
     margin-left: 70px;
 }
-.footer-title{
+.title-footer-social{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -78,7 +78,7 @@
     margin-left: 93px;
     padding-top: 12px;
 }
-.send-title{
+.title-footer-send{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -86,7 +86,7 @@
     color: getColor(light);
     margin-bottom: 20px;
 }
-.send-input{
+.input-send{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
 }
-.send-button{
+.button-send{
     width: 200px;
     height: 50px;
     display: flex;

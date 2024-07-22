@@ -4,3 +4,12 @@
     font-size: 14px;
     line-height: 1.17;
 }
+.list-header,
+.list-peculiarities,
+.list-doing,
+.list-team,
+.list-clients,
+.list-social{
+    display: flex;
+    justify-content: space-between;
+}

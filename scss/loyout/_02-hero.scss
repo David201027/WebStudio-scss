@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.hero-title{
+.title-hero{
     color: getColor(light);
     width: 696px;
     font-weight: 900;
@@ -23,7 +23,7 @@
     text-align: center;
     margin-bottom: 30px;
 }
-.hero-button {
+.button-hero {
     background-color: getColor(main);
     color: getColor(light);
     border-radius: 4px;
@@ -60,14 +60,14 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: getColor(dark);
     margin-bottom: 12px;
 }
 .label{
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: getColor(text);
     margin-bottom: 4px;
 }
 .div-checkbox{
@@ -88,12 +88,12 @@
 input, textarea{
     outline: none;
 }
-input:focus{
-    /* outline: 1px red dashed; */
-    border: getColor(main);
+input:focus:valid{
+    outline: 1px solid getColor(main);
 }
 input:focus:invalid{
-    border-color: red;
+    // border-color: 1px solid getColor(red);
+    outline: 1px red solid; 
 }
 .checkbox-lb{
     font-weight: 400;

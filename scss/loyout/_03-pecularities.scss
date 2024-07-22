@@ -1,22 +1,22 @@
-.peculiarities-section{
+.section-peculiarities{
     padding-top: 94px;
 }
-.peculiarities-section-title{
+.title-peculiarities{
     color: getColor(dark);
     font-size: 36px;
     text-align: center;
     margin-bottom: 50px;
     display: none;
 }
-.peculiarities-section-list{
+.list-peculiarities{
     display: flex;
     justify-content: space-between;
 }
-.peculiarities-list-item{
+.list__item-peculiarities{
     width: 270px;
     /* outline: 1px red dashed; */
 }
-.peculiarities-list-item::before{
+.list__item-peculiarities::before{
     content: '';
     display: block;
     width: 100%;
@@ -29,16 +29,16 @@
     background-color: getColor(gray);
     /* outline: 1px red dashed; */
 }
-.peculiarities-list-item:nth-child(1):before{
+.list__item-peculiarities:nth-child(1):before{
     background-image: url(../images/antenna.svg);
 }
-.peculiarities-list-item:nth-child(2):before{
+.list__item-peculiarities:nth-child(2):before{
     background-image: url(../images/clock.svg);
 }
-.peculiarities-list-item:nth-child(3):before{
+.list__item-peculiarities:nth-child(3):before{
     background-image:  url(../images/diagram.svg);
 }
-.peculiarities-list-item:nth-child(4):before{
+.list__item-peculiarities:nth-child(4):before{
     background-image: url(../images/astronaut.svg);
 }
 .peculiarities-title{

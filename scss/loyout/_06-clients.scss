@@ -1,7 +1,7 @@
 .section-clients{
     padding: 94px 0;
 }
-.clients-title{
+.title-clients{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -10,15 +10,15 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.clients-list{
+.list-clients{
     display: flex;
     gap: 30px;
 }
-.clients-item:hover .clients-link{
+.list-clients__item:hover .link-clients{
     border-color: getColor(main);
     fill: getColor(main);
 }
-.clients-link{
+.link-clients{
     display: flex;
     align-items: center;
     justify-content: center;

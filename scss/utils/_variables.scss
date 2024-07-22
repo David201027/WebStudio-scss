@@ -30,6 +30,7 @@
 // $color-div: #EEEEEE;
 // $color-border: #ECECEC;
 
+
 $fonts: (
     font-family: 'Roboto',
     second-family: 'Raleway',
@@ -46,6 +47,7 @@ $colors: (
     button-p: #F5F4FA,
     div: #EEEEEE,
     border: #ECECEC,
+    div-text: rgba(33, 150, 243, 0.9),
 );
 
 @function getFont($key) {

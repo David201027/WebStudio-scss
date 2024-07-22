@@ -1,9 +1,10 @@
 .header{
-    border-bottom: getColor(border);
+    border-bottom: 1px solid getColor(border);
     background-color: getColor(light);
     width: 1600px;
     height: 80px;
 }
+
 .nav-list,
 .header-list{
     display: flex;
@@ -15,10 +16,10 @@
     align-items: center;
     padding-top: 24px;
 }
-.nav-list{
+.list-header{
     gap: 50px;
 }
-.nav-list-link::after {
+.link--list-item-header::after {
     content: '';
     position: absolute;
     left: 0;
@@ -33,13 +34,13 @@
     transition-timing-function: ease;
 }
 
-.nav-list-link.active-link::after {
+.link--list-item-header.active::after {
     transform: scaleX(1);
 }
-.nav-list-link:hover::after {
+.link--list-item-header:hover::after {
     transform: scaleX(1);
 }
-.nav-link{
+.link-header{
     font-family: 'Raleway';
     color: getColor(main);
     font-weight: 700;
@@ -48,7 +49,7 @@
     vertical-align: middle;
     margin-right: 93px;
 }
-.header-studio{
+.logo{
     font-family: 'Raleway';
     color: getColor(black);
     font-weight: 700;
@@ -60,27 +61,27 @@
     display: flex;
     align-items: center;
 }
-.nav-list-link{
+.link--list-item-header{
     color: getColor(dark);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-decoration: none;
     position: relative;
-    padding-bottom: 33px;
+    padding-bottom: 32px;
 
     transition-property: color, fill;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 100ms;
 }
-.nav-list-link:hover{
+.link--list-item-header:hover{
     color: getColor(main);
 }
 .header-list{
     gap: 30px;
 }
-.list-link{
+.link--list-item{
     color: getColor(text);
     fill: getColor(text);
     font-weight: 500;
@@ -96,11 +97,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 100ms;
 }
-.list-item:hover .list-link{
+.list__item-header:hover .link--list-item{
     color: getColor(main);
     fill: getColor(main);
 
 }
-.active-link{
+.active{
     color: getColor(main);
 }
