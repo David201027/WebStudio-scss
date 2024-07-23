@@ -82,7 +82,7 @@ button:hover {
   gap: 50px;
 }
 
-.link--list-item-header::after {
+.link-list-item-header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -97,11 +97,11 @@ button:hover {
   transition-timing-function: ease;
 }
 
-.link--list-item-header.active::after {
+.link-list-item-header.active::after {
   transform: scaleX(1);
 }
 
-.link--list-item-header:hover::after {
+.link-list-item-header:hover::after {
   transform: scaleX(1);
 }
 
@@ -129,7 +129,7 @@ button:hover {
   align-items: center;
 }
 
-.link--list-item-header {
+.link-list-item-header {
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -143,7 +143,7 @@ button:hover {
   transition-delay: 100ms;
 }
 
-.link--list-item-header:hover {
+.link-list-item-header:hover {
   color: #2196F3;
 }
 
@@ -151,7 +151,7 @@ button:hover {
   gap: 30px;
 }
 
-.link--list-item {
+.link-list-item {
   color: #757575;
   fill: #757575;
   font-weight: 500;
@@ -166,7 +166,7 @@ button:hover {
   transition-delay: 100ms;
 }
 
-.list__item-header:hover .link--list-item {
+.list__item-header:hover .link-list-item {
   color: #2196F3;
   fill: #2196F3;
 }
