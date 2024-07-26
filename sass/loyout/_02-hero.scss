@@ -1,0 +1,221 @@
+.hero {
+  background-color: getColor(backgraund);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  .hero-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-hero {
+    color: getColor(light);
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .button-hero {
+    background-color: getColor(main);
+    color: getColor(light);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    width: 216px;
+    height: 50px;
+
+    &:hover {
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+
+    &.is-hidden .modal {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+
+  .modal {
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: getColor(light);
+    transform: translate(-50%, -50%);
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .title-modal {
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: getColor(dark);
+      margin-bottom: 12px;
+    }
+
+    .label {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      color: getColor(text);
+      margin-bottom: 10px;
+    }
+
+    .div-checkbox {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 30px;
+
+      .link-check{
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: getColor(main);
+      }
+    }
+
+    .div-form > input {
+      padding-left: 42px;
+    }
+
+    input, textarea {
+      outline: none;
+
+      &:focus:valid {
+        outline: 1px solid getColor(main);
+      }
+
+      &:focus:invalid {
+        outline: 1px red solid;
+      }
+    }
+
+    .checkbox-lb {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+      color: getColor(text);
+    }
+
+    .textarea {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 448px;
+      height: 120px;
+      resize: none;
+      padding-top: 12px;
+      padding-left: 16px;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+
+      &:focus {
+        border: 1px solid getColor(main);
+        transition: border-color 0.3s;
+      }
+    }
+    .input-text {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 448px;
+      height: 40px;
+    }
+
+    .btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border-radius: 100%;
+      fill: #000;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: getColor(light);
+      width: 31px;
+      height: 31px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .man,
+    .phone1,
+    .mail {
+      position: absolute;
+      fill: getColor(dark);
+
+      &.man {
+        top: 32px;
+        left: 15px;
+      }
+
+      &.phone1 {
+        top: 31.30px;
+        left: 15px;
+      }
+
+      &.mail {
+        top: 32px;
+        left: 14px;
+      }
+    }
+  }
+
+  .submit {
+    width: 200px;
+    height: 50px;
+  }
+
+  .forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .div-form {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}  

@@ -1,0 +1,46 @@
+.section-clients {
+    padding: 94px 0;
+
+    .title-clients {
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: getColor('dark');
+        margin-bottom: 50px;
+    }
+
+    .list-clients {
+        display: flex;
+        gap: 30px;
+        justify-content: center; // Центрирование элементов
+        list-style: none; // Убираем маркеры
+        padding: 0; // Убираем внутренние отступы
+        margin: 0; // Убираем внешние отступы
+
+        .list-clients__item {
+            // Можно добавить стили для элементов списка, если нужно
+
+            &:hover {
+                .link-clients {
+                    border-color: getColor('main');
+                    fill: getColor('main');
+                }
+            }
+        }
+    }
+
+    .link-clients {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #AFB1B8;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+
+        transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms,
+        fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+    }
+}
