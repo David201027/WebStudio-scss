@@ -788,7 +788,7 @@ button:hover {
   list-style: none;
   padding: 0;
 }
-.portfolio-section .project-list .project-listitem {
+.portfolio-section .project-list .project-list__item {
   background-color: #FFFFFF;
   max-width: 370px;
   cursor: pointer;
@@ -796,7 +796,7 @@ button:hover {
   transition-duration: 500ms;
   transition-timing-function: ease;
 }
-.portfolio-section .project-list .project-listitem:hover {
+.portfolio-section .project-list .project-list__item:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .portfolio-section .project-list .box {
