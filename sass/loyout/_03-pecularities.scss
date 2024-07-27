@@ -6,12 +6,11 @@
         font-size: 36px;
         text-align: center;
         margin-bottom: 50px;
-        display: none; // Оставлено по вашему коду, измените на display: block для отображения
+        display: none;
     }
     
     .list-peculiarities {
-        display: flex;
-        justify-content: space-between;
+        @include flex-just;
         
         .list__item-peculiarities {
             width: 270px;

@@ -11,15 +11,15 @@
     }
 
     .list-clients {
-        display: flex;
+        // display: flex;
+        // justify-content: center;
+        @include flex-change(flex, center, center);
         gap: 30px;
-        justify-content: center; // Центрирование элементов
-        list-style: none; // Убираем маркеры
-        padding: 0; // Убираем внутренние отступы
-        margin: 0; // Убираем внешние отступы
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
         .list-clients__item {
-            // Можно добавить стили для элементов списка, если нужно
 
             &:hover {
                 .link-clients {
@@ -31,9 +31,10 @@
     }
 
     .link-clients {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flex-change(flex, center, center);
         fill: #AFB1B8;
         border: 1px solid #AFB1B8;
         border-radius: 4px;

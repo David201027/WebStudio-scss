@@ -11,8 +11,7 @@
     }
 
     .list-doing {
-        display: flex;
-        justify-content: space-between;
+        @include flex-just;
 
         .list-doing__item {
             position: relative;
