@@ -1,3 +1,5 @@
+@media screen and (min-width: 1200px) {
+    
 .section-doing {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -23,7 +25,7 @@
             transition-timing-function: ease;
             transition-delay: 100ms;
 
-            
+
             &:hover {
                 transform: scale(1.05);
             }
@@ -44,5 +46,11 @@
                 padding: 24px 0;
             }
         }
+    }
+}
+}
+@media screen and (min-width: 480px) {
+    .section-doing{
+        display: none;
     }
 }
