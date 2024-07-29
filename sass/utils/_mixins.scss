@@ -20,13 +20,6 @@
     display: flex;
     flex-direction: column;
 }
-@mixin absolut {
-    position: absolute;
-}
 @mixin backgraund($color) {
     background-color: $color;
-}
-@mixin just($key){
-    display: flex;
-    justify-content: $key;
 }
