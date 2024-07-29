@@ -1,5 +1,6 @@
 .section-team {
-    background-color: getColor(gray);
+    // background-color: getColor(gray);
+    @include backgraund(getColor(gray));
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -18,7 +19,7 @@
         .list-team__item {
             padding-bottom: 30px;
             border-radius: 0 0 4px 4px;
-            background-color: white;
+            @include backgraund(getColor(light));
             box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
             @include flex-align;
             flex-direction: column;
@@ -74,7 +75,8 @@
             @include flex-change(flex, center, center);
 
             &:hover .social-link {
-                background-color: getColor(main);
+                // background-color: getColor(main);
+                @include backgraund(getColor(main));
                 fill: getColor(light);
             }
         }

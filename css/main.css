@@ -475,7 +475,7 @@ button:hover {
 .section-team .list-team .list-team__item {
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
@@ -697,7 +697,7 @@ button:hover {
   width: 358px;
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: rgba(33, 150, 243, 0);
+  background-color: rgba(33, 150, 243, 0);
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -719,7 +719,7 @@ button:hover {
   color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #2196f3;
+  background-color: #2196F3;
   border: none;
   padding: 10px 28px;
   gap: 10px;
@@ -729,6 +729,8 @@ button:hover {
 
 .portfolio-section {
   padding: 94px 0;
+  display: flex;
+  align-items: center;
 }
 .portfolio-section .container {
   max-width: 1200px;
@@ -769,7 +771,7 @@ button:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.portfolio-section .filter-list .filter-list-item .list-item-button #active {
+.portfolio-section .filter-list .filter-list-item .list-item-button.active-but {
   background-color: #2196F3;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
@@ -851,5 +853,6 @@ button:hover {
   line-height: 187%;
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
   justify-content: left;
 }/*# sourceMappingURL=main.css.map */

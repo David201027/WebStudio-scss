@@ -1,5 +1,6 @@
 .portfolio-section {
   padding: 94px 0;
+  @include flex-align;
 
   .container {
     max-width: 1200px;
@@ -12,8 +13,7 @@
   }
 
   .filter-list {
-    display: flex;
-    justify-content: center;
+    @include just(center);
     margin-bottom: 30px;
     padding-bottom: 16px;
 
@@ -29,7 +29,8 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: getColor('dark');
-        background-color: getColor('button-p');
+        // background-color: getColor('button-p');
+        @include backgraund(getColor(button-p));
         border: 0;
         padding: 6px 24px;
         border-radius: 4px;
@@ -39,13 +40,15 @@
         transition-delay: 100ms;
 
         &:hover {
-          background-color: getColor('main');
+          // background-color: getColor('main');
+          @include backgraund(getColor(main));
           color: getColor('light');
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
           cursor: pointer;
         }
-        #active {
-          background-color: getColor('main');
+        &.active-but {
+          // background-color: getColor('main');
+          @include backgraund(getColor(main));
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
           color: getColor('light');
         }
@@ -61,7 +64,8 @@
     padding: 0;
 
     .project-list__item {
-      background-color: getColor('light');
+      // background-color: getColor('light');
+      @include backgraund(getColor(light));
       max-width: 370px;
       cursor: pointer;
       transition-property: box-shadow;
@@ -86,7 +90,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: getColor('div-text');
+        // background-color: getColor('div-text');
+        @include backgraund(getColor(div-text));
         transform: translatey(100%);
         transition-property: transform;
         transition-duration: 500ms;
@@ -117,7 +122,8 @@
         padding: 20px 23px 19px 23px;
         border: solid getColor('div');
         border-width: 0 1px 1px 1px;
-        background-color: #FFFFFF;
+        // background-color: #FFFFFF;
+        @include backgraund(getColor(light));
         position: relative;
 
         .project-item-title {
@@ -137,7 +143,8 @@
           line-height: 187%;
           letter-spacing: 0.03em;
           color: getColor('text');
-          justify-content: left;
+          // justify-content: left;
+          @include just(left);
         }
       }
     }

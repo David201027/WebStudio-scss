@@ -24,7 +24,8 @@
                 border-radius: 4px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-color: getColor(gray);
+                // background-color: getColor(gray);
+                @include backgraund(getColor(gray));
             }
 
             &:nth-child(1)::before {
