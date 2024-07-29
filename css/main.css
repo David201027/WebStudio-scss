@@ -36,6 +36,18 @@ button:hover {
   font-size: 14px;
   line-height: 1.17;
 }
+@media screen {
+  .body {
+    min-width: 1700px;
+    background-color: blanchedalmond;
+  }
+}
+@media screen {
+  .body {
+    max-width: 1800px;
+    background-color: green;
+  }
+}
 
 .main-conteiner {
   width: 1600px;

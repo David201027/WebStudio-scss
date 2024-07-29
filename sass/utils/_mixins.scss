@@ -23,3 +23,7 @@
 @mixin backgraund($color) {
     background-color: $color;
 }
+@mixin just($key){
+    display: flex;
+    justify-content: $key;
+}

@@ -3,4 +3,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
+    @media screen {min-width: 1700px;
+        background-color: blanchedalmond;
+    }
+    @media screen {max-width: 1800px;
+        background-color: green;
+    }
 }
