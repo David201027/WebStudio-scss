@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.body {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.main-conteiner {
+  width: 1600px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .main-conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-conteiner {
+    width: 1200px;
+  }
+}
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+}
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #2F303A;
+  background-image: url(../image/background-m.jpg);
+}/*# sourceMappingURL=main.css.map */
