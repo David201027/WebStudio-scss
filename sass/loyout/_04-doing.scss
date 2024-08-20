@@ -1,5 +1,6 @@
 .section-doing{
     display: none;
+    min-width: 100vw;
 }
 @media screen and (min-width: getBreakPoint('desktop')) {
     .section-doing {

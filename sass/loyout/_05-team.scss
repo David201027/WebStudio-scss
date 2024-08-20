@@ -2,7 +2,7 @@
     @include backgraund(getColor(gray));
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 100vw;
+    min-width: 100vw;
     
     .team-div{
         display: flex;
