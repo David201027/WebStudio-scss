@@ -1,7 +1,14 @@
 .footer {
     background-color: getColor('backgraund');
     padding: 60px 0;
-    min-width: 100vw;
+    width: 100vw;
+
+    .footer-div{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .footer__adress {
         font-style: normal;
@@ -135,7 +142,8 @@
             .input-send {
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 4px;
-                width: 450px;
+                width: 100%;
+                max-width: 450px;
                 height: 50px;
                 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
                 background: rgba(33, 150, 243, 0);
@@ -152,8 +160,6 @@
                     border-color: red;
                     }
             }
-
-            
 
             .button-send {
                 width: 200px;
@@ -188,49 +194,59 @@
             .footer-social{
                 padding-top: 5px;
             }
+        }
+        .div-send {
     
+            .form-footer {
+    
+                .input-send {
+                    width: 450px;
+                }
+            }
         }
     }
 }
 @media screen and (min-width: getBreakPoint('desktop')) {
-    .footer-div{
-        display: flex;
-        flex-direction: row;
-        align-items: normal;
-        width: 1200px;
-        .footer-social{
+    .footer{
+        .footer-div{
+            flex-direction: row;
             align-items: normal;
-        }
-
-        .tablet-footer{
-            gap: 70px;
-        }
-
-        .link-footer{
-            text-align: left;
-        }
-
-        .list-footer{
-            align-items: start;
-        } 
-
-        .div-send{
-            padding-top: 5px;
-
-            .title-footer-send{
+            width: 1200px;
+    
+            .footer-social{
+                align-items: normal;
+            }
+    
+            .tablet-footer{
+                gap: 70px;
+            }
+    
+            .link-footer{
                 text-align: left;
             }
-            
-            .form{
     
-                .form-footer{
-                    display: flex;
-                    flex-direction: row;
-                    
-                    .input-send{
-                        width: 358px;
-                        margin-bottom: 0;
-                        margin-right: 12px;
+            .list-footer{
+                align-items: start;
+            } 
+    
+            .div-send{
+                padding-top: 5px;
+    
+                .title-footer-send{
+                    text-align: left;
+                }
+                
+                .form{
+        
+                    .form-footer{
+                        display: flex;
+                        flex-direction: row;
+                        
+                        .input-send{
+                            width: 358px;
+                            margin-bottom: 0;
+                            margin-right: 12px;
+                        }
                     }
                 }
             }

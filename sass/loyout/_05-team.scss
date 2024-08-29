@@ -2,13 +2,15 @@
     @include backgraund(getColor(gray));
     padding-top: 60px;
     padding-bottom: 60px;
-    min-width: 100vw;
+    width: 100vw;
     
     .team-div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
     }
+
     .title-team {
         color: getColor(dark);
         font-weight: 700;
@@ -21,7 +23,7 @@
     .list-team {
 
         .list-team__item {
-            width: 450px;
+            width: 100%;
             padding-bottom: 30px;
             border-radius: 0 0 4px 4px;
             @include backgraund(getColor(light));

@@ -1,20 +1,27 @@
 .hero{
+  padding-top: 118px;
+  padding-bottom: 118px;
   @include backgraund(getColor(backgraund));
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m.png);
+  background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero-m-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  width: 100vw;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/hero-m-2x.png);
+  }
 }
 .hero-div {
   @include flex-align;
   flex-direction: column;
+  width: 100vw;
 }
 .title-hero {
   color: getColor(light);
-  width: 360px;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 162%;
@@ -44,7 +51,7 @@
   width: 100%;
   height: 100%;
 //   background-color: rgba(0, 0, 0, 0.2);
-@include backgraund( rgba(0, 0, 0, 0.2));
+  @include backgraund( rgba(0, 0, 0, 0.2));
   z-index: 2;
 
   &.is-hidden .modal {
@@ -216,11 +223,16 @@
 
 @media screen and (min-width: getBreakPoint('tablet')){
   .hero{
+    width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/hero-t-2x.png);
+    }
   }
   .title-hero{
     font-weight: 900;
@@ -234,13 +246,18 @@
 }
 @media screen and (min-width: getBreakPoint('desktop')){
     .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100vw;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-1x.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        width: 100vw;
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/hero-d-2x.png);
+        }
     }
     .title-hero{
         font-weight: 900;
