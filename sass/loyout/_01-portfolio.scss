@@ -2,14 +2,27 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    .portfolio-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+
     .filter-title{
       display: none;
+    }
+    @media (min-width: 320px) and (max-width: 369px) {
+      .filter-list{
+        width: 280px !important;
+      }
     }
     .filter-list{
         display: flex;
         gap: 8px;
         width: 339px;
         flex-wrap: wrap;
+
     
         .filter-list__item{
             display: block;
@@ -38,7 +51,8 @@
           background-color: getColor('light');
           // background-color: getColor('light');
           @include backgraund(getColor(light));
-          width: 450px;
+          width: 44vw;
+          max-width: 450px;
   
           cursor: pointer;
           transition-property: box-shadow;
@@ -53,8 +67,10 @@
         }
         .box {
           position: relative;
-          width: 450px;
-          height: 404px;
+          width: 88vw;
+          max-width: 450px;
+          min-height: 293px;
+          max-width: 404px;
           margin: 0 auto;
           overflow: hidden;
   
@@ -71,21 +87,25 @@
             transition-property: transform;
             transition-duration: 500ms;
             transition-timing-function: ease-in-out;
+
             .taxt {
               font-weight: 400;
               font-size: 18px;
               line-height: 156%;
               letter-spacing: 0.03em;
               color: getColor('light');
-              padding: 77px 24px;
+              padding: 10% 5%;
+
+              
+            }
+            }
+            @media (min-width: 320px) and (max-width: 371px) {
+                .taxt{
+                    font-size: 15px !important;
             }
           }
           &:hover .overlay {
             transform: translatey(0);
-          }
-          .image {
-            width: 100%;
-            height: auto;
           }
           .div-text {
             width: 100%;

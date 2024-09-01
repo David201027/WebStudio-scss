@@ -260,7 +260,7 @@ main {
     font-size: 16px !important;
   }
 }
-@media (min-height: 600px) and (max-height: 650px) {
+@media (min-height: 600px) and (max-height: 719px) {
   .mobile-menu {
     margin-bottom: 150px;
   }
@@ -1244,8 +1244,19 @@ main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.portfolio-section .portfolio-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
 .portfolio-section .filter-title {
   display: none;
+}
+@media (min-width: 320px) and (max-width: 369px) {
+  .portfolio-section .filter-list {
+    width: 280px !important;
+  }
 }
 .portfolio-section .filter-list {
   display: flex;
@@ -1276,7 +1287,8 @@ main {
 .portfolio-section .project-list .project-list__item {
   background-color: #FFFFFF;
   background-color: #FFFFFF;
-  width: 450px;
+  width: 44vw;
+  max-width: 450px;
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 500ms;
@@ -1290,8 +1302,10 @@ main {
 }
 .portfolio-section .project-list .box {
   position: relative;
-  width: 450px;
-  height: 404px;
+  width: 88vw;
+  max-width: 450px;
+  min-height: 293px;
+  max-width: 404px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1314,14 +1328,15 @@ main {
   line-height: 156%;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 77px 24px;
+  padding: 10% 5%;
+}
+@media (min-width: 320px) and (max-width: 371px) {
+  .portfolio-section .project-list .box .taxt {
+    font-size: 15px !important;
+  }
 }
 .portfolio-section .project-list .box:hover .overlay {
   transform: translatey(0);
-}
-.portfolio-section .project-list .box .image {
-  width: 100%;
-  height: auto;
 }
 .portfolio-section .project-list .box .div-text {
   width: 100%;
