@@ -37,10 +37,18 @@
             text-align: center;
             border-radius: 4px;
             text-wrap: nowrap;
+            transition-property: background, color;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-delay: 100ms;
         
             &.active-but{
                 background-color: getColor('main');
                 color: getColor('light');
+            }
+            &:hover{
+              @include backgraund(getColor('main'));
+              color: getColor('light');
             }
         }
     }
