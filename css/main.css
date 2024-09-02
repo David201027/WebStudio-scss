@@ -465,7 +465,8 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 80vw;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #FFFFFF;
@@ -482,6 +483,11 @@ main {
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .modal .title-modal {
+    font-size: 15px !important;
+  }
 }
 .modal .label {
   font-weight: 400;
@@ -524,7 +530,8 @@ main {
 .modal .textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
+  width: 70vw;
+  max-width: 370px;
   height: 120px;
   resize: none;
   padding-top: 12px;
@@ -540,7 +547,8 @@ main {
 .modal .input-text {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
+  width: 70vw;
+  max-width: 370px;
   height: 40px;
 }
 .modal .btn {
