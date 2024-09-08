@@ -22,13 +22,6 @@
 .logo{
     color: getColor('dark');
 }
-.form-header > label{
-    display: flex;
-    align-items: center;
-}
-#checkbox-h{
-    display: none;
-}
 
 .container-menu{
     width: 24px;
@@ -173,8 +166,6 @@
     line-height: 122%;
     letter-spacing: 0.02em;
     color: getColor('main');
-
-    
 }
 @media (max-height: 600px) {
     .mobile-menu{
